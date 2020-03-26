@@ -20,7 +20,7 @@ def pathing_library_mojo(some_file, file_convert='csv'):
             pathlib is the bread and butter of the function
             platform is just to check the operating system and perform a simple conversion
     """
-    orig_file_path = pl.Path(some_file)
+    str(orig_file_path) = pl.Path(some_file)
     parent_path = orig_file_path.parent
     new_filename = orig_file_path.stem + '.' + file_convert
 
